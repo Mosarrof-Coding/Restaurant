@@ -1,0 +1,70 @@
+#customer_saying{
+    background: url(../images/testimonial-bg.jpg) no-repeat center/cover;
+    .cuslomLayer{
+        width: 100%;
+        display: block;
+        background: $dark000;
+        padding: 140px 0;
+        .customHeding{
+            text-align: center;
+            margin-bottom: 50px;
+            h3{
+                @include h3;
+            }
+            h4{
+                @include h4Img;
+                color:$white
+            }
+            img{
+                margin: auto;
+            }
+        }
+        .customSLider{
+            width: 70%;
+            display:block;
+            margin:0 auto;
+            .slideItem{
+                width: 100%;
+                display: block;
+                margin: auto;
+                text-align: center;
+                p{
+                    color:$white;
+                    text-transform: capitalize;
+                    font-size: 13px;
+                    letter-spacing: .03rem;
+                    color:$samewhite;
+                    line-height: 30px;
+                }
+                svg{
+                    color:$white;
+                    font-size: 40px;
+
+                }
+                .sign{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 20px;
+                    .customSign{
+                        color:$white;
+                        position: relative;
+                        display: inline-block;
+                        margin-right: -20px;
+                        &::after{
+                            display: inline-block;
+                            position: absolute;
+                            left: -40px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            content: "";
+                            width: 30px;
+                            height: 4px;
+                            background: $h3-softYello;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+#booking{
+    width: 100%;
+    background: url(../images/booktable.jpg) no-repeat center/cover;
+    .booklayer{
+        width: 100%;
+        background: $darkTrp22;
+        padding: 140px 0;
+        .bookheading{
+            text-align: center;
+            h3{
+                @include h3;
+                margin-bottom: 20px;
+            }
+            h4{
+                @include h4Img;
+                color:$white;
+            }
+        }
+        form{
+            .inputGrup{
+                width: 100%;
+                position: relative;
+                margin-top: 20px;
+                input{
+                    width: 100%;
+                    padding:15px 10px 15px 50px;
+                    text-transform: capitalize;
+                    border: none;
+                    &::before{
+                        display: none !important;
+                    }
+                    &::placeholder{
+                        color:$sadow1;
+                        i{
+                            display: none !important;
+                        }
+                    }
+                }
+                .cmnI{
+                    display: inline-block;
+                    position: absolute;
+                    left: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color:$sadow1;
+                }
+
+            }
+            .bookBTN{
+                margin: 20px 0;
+                text-align: center;
+                button{
+                    @include cmnBtn;
+
+                }
+            }
+        }
+    }
+}

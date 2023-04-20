@@ -1,0 +1,87 @@
+@import "../mixins/mixin";
+#events{
+    padding: 100px 0;
+    .evHeadings{
+        text-align: center;
+        h3{
+            @include h3;
+        }
+        h4{
+            @include h4Img;
+        }
+        img{
+            margin: auto;
+        }
+    }
+    .evntsImg{
+        position: relative;
+        overflow: hidden;
+        margin-top: 30px;
+        img{
+
+        }
+        .evntTxt{
+            text-align: center;
+            padding: 12px 20px;
+            height: 240px;
+            background: $dark000;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin-bottom: -50%;
+            transition: ease .3s;
+            h5{
+                font-weight: bold;
+                font-size: 18px;
+                font-style: italic;
+                letter-spacing: 0.72px;
+                margin-top: 0;
+                margin-bottom: 20px;
+                position: relative;
+                padding-bottom: 19px;
+                display: inline-block;
+                color: $white;
+                &::after{
+                    display: inline-block;
+                    width: 20%;
+                    height: 4px;
+                    background: $logocolor;
+                    position: absolute;
+                    content: "";
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                }
+            }
+            .p13{
+                font-size: 13px;
+                font-weight: 400;
+                text-transform: capitalize;
+                color:$white;
+
+            }
+            .p12{
+                font-size: 13px;
+                font-weight: 600;
+                text-transform: capitalize;
+                color:$logocolor;
+            }
+            .evntbtn{
+                padding: 12px 30px;
+                font-size: 12px;
+                background: $logocolor;
+                color:$white;
+                border: none;
+                text-transform: uppercase;
+                color: $white;
+                letter-spacing: 0.56px;
+                font-weight: 700;
+            }
+        }
+        &:hover{
+            .evntTxt{
+                margin-bottom: 0%;
+            }
+        }
+    }
+}

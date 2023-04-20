@@ -1,0 +1,91 @@
+#special{
+    padding: 100px 0;
+    position: relative;
+    .spcial_heading{
+        text-align: center;
+        h3{
+            @include h3;
+        }
+        h4{
+            @include h4Img;
+        }
+        img{
+            margin: auto;
+            
+        }
+    }
+    .list{
+        .menuItem{
+            .mnu_li{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap:20px;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    box-shadow: 0 0 5px 1px $sadow1;
+                }
+                .menuTxt{
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap:20px;
+                    .innerTxt{
+                        
+                        h6{
+                            @include h6;
+                            color:$dark777;
+                        }
+                        .element{
+                            font-family: 'Lato', sans-serif;
+                            font-size: 12px;
+                            font-weight: 700;
+                            letter-spacing: 0.48px;
+                            text-transform: none;
+                            display: block;
+                            color:$logocolor;
+                        }
+                    }
+                    .innerprice{
+                        margin-top: -7px;
+                        
+                        .SPline{
+                            background: transparent;
+                            display: none;
+
+                        }
+                        .price{
+                            font-size: 20px;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+                            color:$dark777;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .leftAb{
+        width: 17%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        z-index: -1;
+    }
+    .rightAb{
+        width: 17%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: inline-block;
+        z-index: -1;
+    }
+}

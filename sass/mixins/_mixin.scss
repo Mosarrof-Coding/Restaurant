@@ -1,0 +1,84 @@
+@mixin p_one{
+    margin-top: 20px;
+    color: #777777;
+    letter-spacing: 0.35px;
+    line-height: 26px;
+    margin-bottom: 27px;
+}
+@mixin h1($colors){
+    font-size: 65px;
+    display: block;
+}
+@mixin h3{
+    font-size: 65px;
+    line-height: 60px;
+    letter-spacing: 2.6px;
+    text-transform: capitalize;
+    color:$h3-softYello;
+    margin-bottom: 0;
+}
+@mixin h4{
+    display: inline-block;
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    &::before {
+        display: inline-block;
+        background-color: #c59d5f;
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 70px;
+        height: 2px;
+    }
+}
+@mixin h4Img{
+    display:block;
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 40px;
+    position: relative;
+}
+@mixin h5($colors){
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.45px;
+    margin-bottom: 0;
+}
+@mixin onlyh5{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.45px;
+    margin-bottom: 0;
+}
+@mixin h6{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+@mixin cmnBtn{
+    padding: 13px 30px;
+    background: $logocolor;
+    color:$white;
+    border: none;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 0.56px;
+    font-size: 14px;
+    font-weight: 700;
+    &:hover{
+        background: $white;
+        color:$logocolor;
+    }
+}

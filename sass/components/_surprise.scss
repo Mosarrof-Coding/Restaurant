@@ -1,0 +1,23 @@
+#surprise{
+    width: 100%;
+    background-image: url(../images/surprise-sec-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    .surpTitle{
+        display: block;
+        width: 100%;
+        background: $darkTrp22;
+        padding-top: 235px;
+        padding-bottom: 235px;
+        .Title{
+            h3{
+                @include h3;
+            }
+            img{
+                display:block;
+                margin: 20px auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import "../mixins/mixin";
+#about{
+    padding: 100px 0;
+    .quality{
+        h3{
+            @include h3;
+        }
+        h4{
+            @include h4;
+        }
+        .one{
+            @include p_one;
+        }
+        .two{
+
+        }
+        .aboutImg{
+            display: flex;
+            align-items: center;
+            gap:30px;
+            flex-wrap: wrap;
+            .thumb{
+                display: inline-block;
+                max-width: 100px;
+                max-height: 110px;
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .sign{
+                display: inline-block;
+
+            }
+            .name{
+                display: inline-block;
+                text-transform: capitalize;
+
+            }
+            h5{
+                text-transform: capitalize;
+
+            }
+            .sicon{
+                display: flex;
+                svg{
+                    margin-right: 15px;
+                    color:$dark777;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .aboutImg{
+
+    }
+    .mbtn{
+        margin-top: 20px;
+    }
+}

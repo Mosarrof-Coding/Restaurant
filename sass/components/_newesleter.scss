@@ -1,0 +1,46 @@
+#newesleter{
+width: 100%;
+    background: url(../../images/newsletter-bg.jpg) no-repeat center/cover;
+    .nlayre{
+        display: block;
+        width: 100%;
+        background: $dark000;
+        padding: 20px 0;
+        .leter1{
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 600;
+            color:$white;
+        }
+        .leter2{
+            text-transform: capitalize;
+            font-size: 14px;
+            font-weight: 400;
+            color:$samewhite;
+        }
+        .Fleter{
+            width: 100%;
+            display: block;
+            position: relative;
+            input{
+                width: 100%;
+                padding:10px 20px;
+                text-transform: capitalize;
+                &::placeholder{
+                    color:$sadow1;
+                }
+            }
+            .letButton{
+                @include cmnBtn;
+                position: absolute;
+                right: 0;
+                top: 0;
+                &:hover{
+                    background: $dark000 !important;
+                    color:$white !important;
+                }
+            }
+    
+        }
+    }
+}

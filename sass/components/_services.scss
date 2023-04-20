@@ -1,0 +1,60 @@
+#services{
+    margin: 100px 0;
+    .servTitle{
+        text-align: center;
+        margin-bottom: 20px;
+        h3{
+            @include h3;
+        }
+        h4{
+            @include h4Img;
+        }
+        img{
+            display: block;
+            margin:0 auto;
+        }
+    }
+    .servItem{
+        cursor: pointer;
+        margin-top: 10px;
+        .servImg{
+            border: 1px solid $h3-softYello;
+            position: relative;
+            img{
+                background: transparent;
+            }
+            .layer{
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: $darkTrp22;
+                transition: ease .3s;
+                h6{
+                    text-transform: uppercase;
+                }
+                .call{
+                    text-transform: capitalize;
+                    color:$white;
+                }
+                a{
+                    color:$white;
+                }
+            }
+        }
+        .servTxt{
+            margin: 5px 0;
+            h5{
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: 0.45px;
+                margin-bottom: 0;
+            }
+        }
+        &:hover{
+            .layer{
+                padding: 20px 10px;
+            }
+        }
+    }
+}

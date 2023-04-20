@@ -1,0 +1,101 @@
+@import "../variable/variable";
+#header{
+    .header{
+        padding: 5px 0;
+        width: 100%;
+        background: $samewhite;
+            .resTxt{
+                text-transform: capitalize;
+                font-family: 'Raleway', sans-serif;
+                font-size: 12px;
+                letter-spacing: 0.24px;
+                margin-right: 20px;
+                .resA{
+                    text-transform: capitalize;
+                    color:$dark777;
+                }
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: right;
+            .social_icon{
+                width: 60%;
+                display: inline-block;
+                text-align: right;
+                svg{
+                    font-size: 14px;
+                    margin-right: 15px;
+                    display: inline-block;
+                    color:$logocolor;
+
+                }
+            }
+            .input{
+                position: relative;
+                width: 40%;
+                display: inline-block;
+                text-align: right;
+                input{
+                    width: 100%;
+                    display: inline-block;
+                    padding: 0 20px;
+                    text-transform: capitalize;
+                    &::placeholder{
+                        color:$dark777;
+                    }
+                }
+                .fa-magnifying-glass{
+                    position: absolute;
+                    right: 3%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: inline-block;
+                    cursor: pointer;
+                    color:$dark777;
+                }
+            }
+        }
+
+    }
+    .navbar{
+        background: $dark000;
+        padding: 20px 0;
+        .mybrand{
+            img{
+
+            }
+        }
+        .mytogglar{
+            box-shadow: none;
+            padding: 0 !important;
+            border:none;
+
+        }
+        .myCollapse{
+            ul{
+                .firstLi{
+                    a{
+                        color: #fff;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 12px;
+                        font-weight: bold;
+                        letter-spacing: 0.24px;
+                        text-transform: uppercase;
+                        padding: 10px 0 !important;
+                        margin-left: 40px !important;
+                        cursor: pointer;
+                        &::after{
+                            display: none;
+                        }
+                        &:hover{
+                            color:$logocolor;
+                        }
+                    }
+                    .drop_ul{
+                        display: none;
+                    }
+            }
+        }
+    }
+}

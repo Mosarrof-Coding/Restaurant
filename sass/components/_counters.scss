@@ -1,0 +1,46 @@
+@import "../mixins/mixin";
+#counters{
+    background: url(../images/counter-bg.jpg) no-repeat center/cover;
+    .Counter_layer{
+        background: $darkTrp22;
+        .content{
+            padding: 140px 0;
+            .count_title{
+                text-align: center;
+                margin-bottom: 60px;
+                h3{
+                    @include h3;
+                }
+                h4{
+                    @include h4Img;
+                    color:$white !important;
+                }
+                img{
+                    display: block;
+                    margin: auto;
+                }
+            }
+            .counterItem{
+                text-align: center;
+                margin-top: 30px;
+                border: 1px solid $white;
+                padding: 20px;
+                .countImg{
+                    width: 65px;
+                    height: 65px;
+                    display: grid;
+                    place-items: center;
+                    margin: auto;
+                }
+                .counter{
+                    @include h1($white);
+                    color:$white;
+                }
+                h5{
+                    @include h5 ($white);
+                    color:$white;
+                }
+            }
+        }
+    }
+}
