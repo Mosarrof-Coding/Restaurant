@@ -56,17 +56,16 @@
   cursor: pointer;
   color: #777;
 }
-
-.navbar {
+#header .navbar {
   background: rgba(0, 0, 0, 0.8);
   padding: 20px 0;
 }
-.navbar .mytogglar {
+#header .navbar .mytogglar {
   box-shadow: none;
   padding: 0 !important;
   border: none;
 }
-.navbar .myCollapse ul .firstLi a {
+#header .navbar .myCollapse ul .firstLi a {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 12px;
@@ -77,13 +76,13 @@
   margin-left: 40px !important;
   cursor: pointer;
 }
-.navbar .myCollapse ul .firstLi a::after {
+#header .navbar .myCollapse ul .firstLi a::after {
   display: none;
 }
-.navbar .myCollapse ul .firstLi a:hover {
+#header .navbar .myCollapse ul .firstLi a:hover {
   color: #93723E;
 }
-.navbar .myCollapse ul .firstLi .drop_ul {
+#header .navbar .myCollapse ul .firstLi .drop_ul {
   display: none;
 }
 
@@ -935,6 +934,7 @@
   color: #f5b654;
 }
 #footer .drop .quick .linkx {
+  padding-right: 20px;
   margin: 5px 0;
   display: flex;
   justify-content: space-between;

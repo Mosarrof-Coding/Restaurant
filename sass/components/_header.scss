@@ -16,61 +16,58 @@
                 }
             }
         }
-        .right{
-            display: flex;
-            justify-content: right;
-            .social_icon{
-                width: 60%;
+    .right{
+        display: flex;
+        justify-content: right;
+        .social_icon{
+            width: 60%;
+            display: inline-block;
+            text-align: right;
+            svg{
+                font-size: 14px;
+                margin-right: 15px;
                 display: inline-block;
-                text-align: right;
-                svg{
-                    font-size: 14px;
-                    margin-right: 15px;
-                    display: inline-block;
-                    color:$logocolor;
+                color:$logocolor;
 
-                }
             }
-            .input{
-                position: relative;
-                width: 40%;
+        }
+        .input{
+            position: relative;
+            width: 40%;
+            display: inline-block;
+            text-align: right;
+            input{
+                width: 100%;
                 display: inline-block;
-                text-align: right;
-                input{
-                    width: 100%;
-                    display: inline-block;
-                    padding: 0 20px;
-                    text-transform: capitalize;
-                    &::placeholder{
-                        color:$dark777;
-                    }
-                }
-                .fa-magnifying-glass{
-                    position: absolute;
-                    right: 3%;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    display: inline-block;
-                    cursor: pointer;
+                padding: 0 20px;
+                text-transform: capitalize;
+                &::placeholder{
                     color:$dark777;
                 }
             }
+            .fa-magnifying-glass{
+                position: absolute;
+                right: 3%;
+                top: 50%;
+                transform: translateY(-50%);
+                display: inline-block;
+                cursor: pointer;
+                color:$dark777;
+            }
         }
-
     }
     .navbar{
         background: $dark000;
         padding: 20px 0;
         .mybrand{
             img{
-
+    
             }
         }
         .mytogglar{
             box-shadow: none;
             padding: 0 !important;
             border:none;
-
         }
         .myCollapse{
             ul{
@@ -95,6 +92,7 @@
                     .drop_ul{
                         display: none;
                     }
+                }
             }
         }
     }
